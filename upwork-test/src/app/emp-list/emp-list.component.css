@@ -1,0 +1,113 @@
+.container {
+  margin: 20px;
+}
+.span-item-count {
+  left: 20px;
+  text-align: left;
+  float: left;
+  position: absolute;
+  right: 0px;
+  -webkit-transition: all 220ms ease-in-out;
+  color: #808080;
+  padding-right: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 33px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.center {
+  text-align: -webkit-center;
+}
+
+.detail-area {
+  display: flex;
+  margin: 10px 0px 50px 0px;
+}
+
+.detail-area button {
+  position: absolute;
+  right: 0;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+/* ---  Data grid view------------------------------------------------------------------------------------ */
+.data-grid {
+  margin-top: 45px;
+  border-bottom-right-radius: 0.125rem;
+  border-bottom-left-radius: 0.125rem;
+  width: 100%;
+  margin: 5px;
+}
+.data-grid thead th {
+  vertical-align: middle;
+  border-bottom: 1px solid #7ed899;
+  padding: 0.75rem 1.25rem;
+  vertical-align: top;
+}
+.age {
+  font-weight: 700;
+}
+.data-grid td {
+  padding: 0.75rem 1.25rem;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.data-grid tbody tr:hover {
+  background-color: #7ed89940;
+  cursor: pointer;
+  color: blue !important;
+}
+.data-grid td,
+.data-grid th,
+.data-grid tr {
+  transition: background-color ease-in-out 0.15s;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+.mobile-visible {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .mobile-visible {
+    display: block;
+  }
+  .container {
+    width: 90%;
+  }
+  .large-visible {
+    display: none;
+  }
+
+  .db-row {
+    display: block;
+    padding: 3px;
+  }
+  .db-row .header {
+    font-weight: 600;
+  }
+  .db-row .text {
+    margin-left: 5px;
+  }
+
+  .data-grid td {
+    padding: 5px;
+  }
+
+  .span-item-count {
+    left: 20px;
+    text-align: left;
+    float: left;
+  }
+}
